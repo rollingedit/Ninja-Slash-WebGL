@@ -1,0 +1,19 @@
+# Unity caches / rebuildable artifacts
+recovered_project/ExportedProject/Library/
+recovered_project/ExportedProject/Logs/
+recovered_project/ExportedProject/UserSettings/
+recovered_project/ExportedProject/obj/
+recovered_project/ExportedProject/*.csproj
+recovered_project/ExportedProject/*.sln
+recovered_project/AuxiliaryFiles/
+
+# Workbench scratch / rebuildable output
+Temp/
+build_webgl/
+tools/
+unpacked_unityweb/
+*.log
+originals/
+
+# Python
+scripts/__pycache__/

@@ -1,0 +1,105 @@
+using UnityEngine;
+using Object = UnityEngine.Object;
+using Random = UnityEngine.Random;
+using Debug = UnityEngine.Debug;
+
+[AddComponentMenu("NGUI/Interaction/Button Message")]
+public class UIButtonMessage : MonoBehaviour
+{
+	public enum Trigger
+	{
+		OnClick = 0,
+		OnMouseOver = 1,
+		OnMouseOut = 2,
+		OnPress = 3,
+		OnRelease = 4,
+		OnDoubleClick = 5
+	}
+
+	public GameObject target;
+
+	public string functionName;
+
+	public Trigger trigger;
+
+	public bool includeChildren;
+
+	private bool mStarted;
+
+	private bool mHighlighted;
+
+	private void Start()
+	{
+		mStarted = true;
+	}
+
+	private void OnEnable()
+	{
+		if (mStarted && mHighlighted)
+		{
+			OnHover(UICamera.IsHighlighted(((Component)this).gameObject));
+		}
+	}
+
+	private void OnHover(bool isOver)
+	{
+		if (((Behaviour)this).enabled)
+		{
+			if ((isOver && trigger == Trigger.OnMouseOver) || (!isOver && trigger == Trigger.OnMouseOut))
+			{
+				Send();
+			}
+			mHighlighted = isOver;
+		}
+	}
+
+	private void OnPress(bool isPressed)
+	{
+		if (((Behaviour)this).enabled && ((isPressed && trigger == Trigger.OnPress) || (!isPressed && trigger == Trigger.OnRelease)))
+		{
+			Send();
+		}
+	}
+
+	private void OnClick()
+	{
+		if (((Behaviour)this).enabled && trigger == Trigger.OnClick)
+		{
+			Send();
+		}
+	}
+
+	private void OnDoubleClick()
+	{
+		if (((Behaviour)this).enabled && trigger == Trigger.OnDoubleClick)
+		{
+			Send();
+		}
+	}
+
+	private void Send()
+	{
+		if (string.IsNullOrEmpty(functionName))
+		{
+			return;
+		}
+		if ((Object)(object)target == (Object)null)
+		{
+			target = ((Component)this).gameObject;
+		}
+		if (includeChildren)
+		{
+			Transform[] componentsInChildren = target.GetComponentsInChildren<Transform>();
+			int i = 0;
+			for (int num = componentsInChildren.Length; i < num; i++)
+			{
+				Transform val = componentsInChildren[i];
+				((Component)val).gameObject.SendMessage(functionName, (object)((Component)this).gameObject, (SendMessageOptions)1);
+			}
+		}
+		else
+		{
+			target.SendMessage(functionName, (object)((Component)this).gameObject, (SendMessageOptions)1);
+		}
+	}
+}

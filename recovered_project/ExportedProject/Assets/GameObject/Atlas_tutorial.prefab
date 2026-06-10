@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: Atlas_tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  material: {fileID: 2100000, guid: 79fb7413d46149b48b81c0e386d00a20, type: 2}
+  sprites:
+  - name: tutorial_goliath
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 60
+      width: 263
+      height: 322
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 60
+      width: 263
+      height: 322
+    paddingLeft: 0
+    paddingRight: 0.015209125
+    paddingTop: 0.0031055901
+    paddingBottom: 0.0031055901
+  - name: tutorial_zombling
+    outer:
+      serializedVersion: 2
+      x: 644
+      y: 590
+      width: 193
+      height: 173
+    inner:
+      serializedVersion: 2
+      x: 644
+      y: 590
+      width: 193
+      height: 173
+    paddingLeft: 0.03626943
+    paddingRight: 0
+    paddingTop: 0.14450867
+    paddingBottom: 0.06936416
+  - name: tutorial_lankie
+    outer:
+      serializedVersion: 2
+      x: 268
+      y: 10
+      width: 169
+      height: 372
+    inner:
+      serializedVersion: 2
+      x: 268
+      y: 10
+      width: 169
+      height: 372
+    paddingLeft: 0.082840234
+    paddingRight: 0.10059172
+    paddingTop: 0.021505376
+    paddingBottom: 0.045698926
+  - name: tutorial_sweeper
+    outer:
+      serializedVersion: 2
+      x: 395
+      y: 707
+      width: 225
+      height: 317
+    inner:
+      serializedVersion: 2
+      x: 395
+      y: 707
+      width: 225
+      height: 317
+    paddingLeft: 0
+    paddingRight: 0.0044444446
+    paddingTop: 0.0063091484
+    paddingBottom: 0.009463723
+  - name: tutorial_fatso
+    outer:
+      serializedVersion: 2
+      x: 442
+      y: 232
+      width: 238
+      height: 220
+    inner:
+      serializedVersion: 2
+      x: 442
+      y: 232
+      width: 238
+      height: 220
+    paddingLeft: 0.012605042
+    paddingRight: 0.016806724
+    paddingTop: 0.09090909
+    paddingBottom: 0.022727273
+  - name: hud_combo
+    outer:
+      serializedVersion: 2
+      x: 625
+      y: 768
+      width: 251
+      height: 256
+    inner:
+      serializedVersion: 2
+      x: 625
+      y: 768
+      width: 251
+      height: 256
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: tutorial_berserker
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 387
+      width: 390
+      height: 637
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 387
+      width: 390
+      height: 637
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: tutorial_arrow
+    outer:
+      serializedVersion: 2
+      x: 644
+      y: 494
+      width: 50
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 644
+      y: 541
+      width: 50
+      height: 27
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0.0989011
+  - name: tutorial_finger
+    outer:
+      serializedVersion: 2
+      x: 395
+      y: 457
+      width: 244
+      height: 245
+    inner:
+      serializedVersion: 2
+      x: 395
+      y: 457
+      width: 244
+      height: 245
+    paddingLeft: 0.045081966
+    paddingRight: 0.0040983604
+    paddingTop: 0.036734693
+    paddingBottom: 0.008163265
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

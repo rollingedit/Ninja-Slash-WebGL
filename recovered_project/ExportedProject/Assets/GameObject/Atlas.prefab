@@ -1,0 +1,1637 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 8
+  m_Name: Atlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  material: {fileID: 2100000, guid: c917ec01282c6454fbe248328e1b070d, type: 2}
+  sprites:
+  - name: appo_0
+    outer:
+      serializedVersion: 2
+      x: 768
+      y: 1601
+      width: 511
+      height: 447
+    inner:
+      serializedVersion: 2
+      x: 768
+      y: 1601
+      width: 511
+      height: 447
+    paddingLeft: 0
+    paddingRight: 0.0019569471
+    paddingTop: 0
+    paddingBottom: 0.14541388
+  - name: ui_box01
+    outer:
+      serializedVersion: 2
+      x: 1609
+      y: 1579
+      width: 407
+      height: 212
+    inner:
+      serializedVersion: 2
+      x: 1759
+      y: 1707
+      width: 107
+      height: -44
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_footer
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 224
+      width: 960
+      height: 16
+    inner:
+      serializedVersion: 2
+      x: 1
+      y: 225
+      width: 958
+      height: 14
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_coinBar
+    outer:
+      serializedVersion: 2
+      x: 1729
+      y: 1020
+      width: 291
+      height: 125
+    inner:
+      serializedVersion: 2
+      x: 1729
+      y: 1020
+      width: 291
+      height: 125
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_btn_play
+    outer:
+      serializedVersion: 2
+      x: 1213
+      y: 1173
+      width: 280
+      height: 148
+    inner:
+      serializedVersion: 2
+      x: 1213
+      y: 1173
+      width: 280
+      height: 148
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_btn_shop
+    outer:
+      serializedVersion: 2
+      x: 1173
+      y: 747
+      width: 119
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 1173
+      y: 747
+      width: 119
+      height: 123
+    paddingLeft: 0.033613447
+    paddingRight: 0.042016808
+    paddingTop: 0.016260162
+    paddingBottom: 0.024390243
+  - name: ui_btn_cash
+    outer:
+      serializedVersion: 2
+      x: 266
+      y: 640
+      width: 128
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 266
+      y: 640
+      width: 128
+      height: 126
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.007936508
+    paddingBottom: 0.007936508
+  - name: ui_btn_mission
+    outer:
+      serializedVersion: 2
+      x: 133
+      y: 771
+      width: 128
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 133
+      y: 771
+      width: 128
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: ui_btn_upgrade
+    outer:
+      serializedVersion: 2
+      x: 531
+      y: 722
+      width: 128
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 531
+      y: 722
+      width: 128
+      height: 126
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.007936508
+    paddingBottom: 0.007936508
+  - name: ui_btn_stat
+    outer:
+      serializedVersion: 2
+      x: 133
+      y: 640
+      width: 128
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 133
+      y: 640
+      width: 128
+      height: 126
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.007936508
+    paddingBottom: 0.007936508
+  - name: ui_btn_home
+    outer:
+      serializedVersion: 2
+      x: 1173
+      y: 630
+      width: 116
+      height: 112
+    inner:
+      serializedVersion: 2
+      x: 1173
+      y: 630
+      width: 116
+      height: 112
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.035714287
+    paddingBottom: 0
+  - name: ui_btn_dojo
+    outer:
+      serializedVersion: 2
+      x: 1214
+      y: 1326
+      width: 332
+      height: 237
+    inner:
+      serializedVersion: 2
+      x: 1214
+      y: 1326
+      width: 332
+      height: 237
+    paddingLeft: 0
+    paddingRight: 0.027108435
+    paddingTop: 0.080168776
+    paddingBottom: 0
+  - name: ui_btn_back
+    outer:
+      serializedVersion: 2
+      x: 256
+      y: 1171
+      width: 125
+      height: 84
+    inner:
+      serializedVersion: 2
+      x: 256
+      y: 1171
+      width: 125
+      height: 84
+    paddingLeft: 0
+    paddingRight: 0.024
+    paddingTop: 0.2857143
+    paddingBottom: 0.23809524
+  - name: ui_btn_ninjas
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 639
+      width: 128
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 639
+      width: 128
+      height: 126
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.007936508
+    paddingBottom: 0.007936508
+  - name: ui_header
+    outer:
+      serializedVersion: 2
+      x: 636
+      y: 289
+      width: 512
+      height: 2
+    inner:
+      serializedVersion: 2
+      x: 637
+      y: 290
+      width: 510
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_btn_buy
+    outer:
+      serializedVersion: 2
+      x: 525
+      y: 462
+      width: 125
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 620
+      y: 517
+      width: 1
+      height: 40
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: background1
+    outer:
+      serializedVersion: 2
+      x: 1284
+      y: 1568
+      width: 320
+      height: 480
+    inner:
+      serializedVersion: 2
+      x: 1284
+      y: 1568
+      width: 320
+      height: 480
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_shadowcloak
+    outer:
+      serializedVersion: 2
+      x: 396
+      y: 476
+      width: 124
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 396
+      y: 476
+      width: 124
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0.032258064
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: icon_coin
+    outer:
+      serializedVersion: 2
+      x: 1052
+      y: 668
+      width: 69
+      height: 69
+    inner:
+      serializedVersion: 2
+      x: 1052
+      y: 668
+      width: 69
+      height: 69
+    paddingLeft: 0.014492754
+    paddingRight: 0.014492754
+    paddingTop: 0.014492754
+    paddingBottom: 0.014492754
+  - name: icon_headstart
+    outer:
+      serializedVersion: 2
+      x: 959
+      y: 1100
+      width: 249
+      height: 256
+    inner:
+      serializedVersion: 2
+      x: 959
+      y: 1100
+      width: 249
+      height: 256
+    paddingLeft: 0
+    paddingRight: 0.02811245
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_skipmission
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 245
+      width: 124
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 245
+      width: 124
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0.032258064
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: icon_luckybox
+    outer:
+      serializedVersion: 2
+      x: 263
+      y: 379
+      width: 124
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 263
+      y: 379
+      width: 124
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0.032258064
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: ui_box02
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1445
+      width: 505
+      height: 148
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1445
+      width: 505
+      height: 148
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_box03
+    outer:
+      serializedVersion: 2
+      x: 768
+      y: 1361
+      width: 441
+      height: 235
+    inner:
+      serializedVersion: 2
+      x: 964
+      y: 1449
+      width: 49
+      height: 71
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: background3
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1598
+      width: 763
+      height: 450
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1598
+      width: 763
+      height: 450
+    paddingLeft: 0.0091743115
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_popup1
+    outer:
+      serializedVersion: 2
+      x: 1551
+      y: 1150
+      width: 386
+      height: 180
+    inner:
+      serializedVersion: 2
+      x: 1658
+      y: 1250
+      width: 43
+      height: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_btn_setting
+    outer:
+      serializedVersion: 2
+      x: 655
+      y: 1373
+      width: 95
+      height: 95
+    inner:
+      serializedVersion: 2
+      x: 655
+      y: 1373
+      width: 95
+      height: 95
+    paddingLeft: 0.07368421
+    paddingRight: 0.07368421
+    paddingTop: 0.07368421
+    paddingBottom: 0.07368421
+  - name: ui_btn_x
+    outer:
+      serializedVersion: 2
+      x: 1942
+      y: 1150
+      width: 90
+      height: 87
+    inner:
+      serializedVersion: 2
+      x: 1942
+      y: 1150
+      width: 90
+      height: 87
+    paddingLeft: 0.011111111
+    paddingRight: 0
+    paddingTop: 0.03448276
+    paddingBottom: 0.011494253
+  - name: ui_box05
+    outer:
+      serializedVersion: 2
+      x: 651
+      y: 1144
+      width: 303
+      height: 212
+    inner:
+      serializedVersion: 2
+      x: 785
+      y: 1254
+      width: 35
+      height: 14
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_scoreBar
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 903
+      width: 503
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 903
+      width: 503
+      height: 91
+    paddingLeft: 0.005964215
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_gold
+    outer:
+      serializedVersion: 2
+      x: 789
+      y: 589
+      width: 122
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 789
+      y: 589
+      width: 122
+      height: 127
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: hud_thunder
+    outer:
+      serializedVersion: 2
+      x: 260
+      y: 246
+      width: 120
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 260
+      y: 246
+      width: 120
+      height: 128
+    paddingLeft: 0.033333335
+    paddingRight: 0.033333335
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_wind
+    outer:
+      serializedVersion: 2
+      x: 266
+      y: 771
+      width: 128
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 266
+      y: 771
+      width: 128
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: hud_fire
+    outer:
+      serializedVersion: 2
+      x: 392
+      y: 343
+      width: 120
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 392
+      y: 343
+      width: 120
+      height: 128
+    paddingLeft: 0.033333335
+    paddingRight: 0.033333335
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_shadow
+    outer:
+      serializedVersion: 2
+      x: 1300
+      y: 876
+      width: 160
+      height: 160
+    inner:
+      serializedVersion: 2
+      x: 1300
+      y: 876
+      width: 160
+      height: 160
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_btn_pause
+    outer:
+      serializedVersion: 2
+      x: 1052
+      y: 595
+      width: 68
+      height: 68
+    inner:
+      serializedVersion: 2
+      x: 1052
+      y: 595
+      width: 68
+      height: 68
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_coin2
+    outer:
+      serializedVersion: 2
+      x: 1960
+      y: 861
+      width: 69
+      height: 69
+    inner:
+      serializedVersion: 2
+      x: 1960
+      y: 861
+      width: 69
+      height: 69
+    paddingLeft: 0.014492754
+    paddingRight: 0.014492754
+    paddingTop: 0.014492754
+    paddingBottom: 0.014492754
+  - name: hud_combo_wind
+    outer:
+      serializedVersion: 2
+      x: 399
+      y: 739
+      width: 127
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 399
+      y: 739
+      width: 127
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0.007874016
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: hud_combo
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 999
+      width: 251
+      height: 256
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 999
+      width: 251
+      height: 256
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_popup3
+    outer:
+      serializedVersion: 2
+      x: 1954
+      y: 1397
+      width: 82
+      height: 79
+    inner:
+      serializedVersion: 2
+      x: 1976
+      y: 1415
+      width: 38
+      height: 43
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_ninjutsu_fire
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 770
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 770
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_ninjutsu_gold
+    outer:
+      serializedVersion: 2
+      x: 1465
+      y: 598
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1465
+      y: 598
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_ninjutsu_thunder
+    outer:
+      serializedVersion: 2
+      x: 1610
+      y: 722
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1610
+      y: 722
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_ninjutsu_wind
+    outer:
+      serializedVersion: 2
+      x: 1876
+      y: 722
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1876
+      y: 722
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_combo_fire
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 377
+      width: 126
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 377
+      width: 126
+      height: 126
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_fire_active
+    outer:
+      serializedVersion: 2
+      x: 1743
+      y: 722
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1743
+      y: 722
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_gold_active
+    outer:
+      serializedVersion: 2
+      x: 508
+      y: 871
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 508
+      y: 871
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_shadow_active
+    outer:
+      serializedVersion: 2
+      x: 1630
+      y: 855
+      width: 160
+      height: 160
+    inner:
+      serializedVersion: 2
+      x: 1630
+      y: 855
+      width: 160
+      height: 160
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_shadow_disable
+    outer:
+      serializedVersion: 2
+      x: 1465
+      y: 876
+      width: 160
+      height: 160
+    inner:
+      serializedVersion: 2
+      x: 1465
+      y: 876
+      width: 160
+      height: 160
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_thunder_active
+    outer:
+      serializedVersion: 2
+      x: 774
+      y: 853
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 774
+      y: 853
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_wind_active
+    outer:
+      serializedVersion: 2
+      x: 641
+      y: 853
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 641
+      y: 853
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_box06
+    outer:
+      serializedVersion: 2
+      x: 1096
+      y: 875
+      width: 199
+      height: 161
+    inner:
+      serializedVersion: 2
+      x: 1168
+      y: 950
+      width: 55
+      height: 11
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: background2
+    outer:
+      serializedVersion: 2
+      x: 1997
+      y: 296
+      width: 33
+      height: 421
+    inner:
+      serializedVersion: 2
+      x: 1998
+      y: 297
+      width: 31
+      height: 70
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_box08
+    outer:
+      serializedVersion: 2
+      x: 256
+      y: 1004
+      width: 410
+      height: 135
+    inner:
+      serializedVersion: 2
+      x: 342
+      y: 1058
+      width: 238
+      height: 27
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_backCover
+    outer:
+      serializedVersion: 2
+      x: 1598
+      y: 722
+      width: 4
+      height: 4
+    inner:
+      serializedVersion: 2
+      x: 1598
+      y: 722
+      width: 4
+      height: 4
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_box09
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1260
+      width: 386
+      height: 180
+    inner:
+      serializedVersion: 2
+      x: 72
+      y: 1345
+      width: 242
+      height: 23
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_btn_disable
+    outer:
+      serializedVersion: 2
+      x: 985
+      y: 545
+      width: 60
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 1010
+      y: 570
+      width: 10
+      height: 10
+    paddingLeft: 0.016666668
+    paddingRight: 0.016666668
+    paddingTop: 0.016666668
+    paddingBottom: 0.016666668
+  - name: ui_btn_selected
+    outer:
+      serializedVersion: 2
+      x: 1954
+      y: 1481
+      width: 85
+      height: 93
+    inner:
+      serializedVersion: 2
+      x: 1954
+      y: 1481
+      width: 85
+      height: 93
+    paddingLeft: 0
+    paddingRight: 0.09411765
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_checkmark
+    outer:
+      serializedVersion: 2
+      x: 1942
+      y: 1242
+      width: 91
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 1942
+      y: 1242
+      width: 91
+      height: 88
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.011363637
+    paddingBottom: 0.022727273
+  - name: ui_btn_badge
+    outer:
+      serializedVersion: 2
+      x: 923
+      y: 758
+      width: 90
+      height: 90
+    inner:
+      serializedVersion: 2
+      x: 923
+      y: 758
+      width: 90
+      height: 90
+    paddingLeft: 0.011111111
+    paddingRight: 0.011111111
+    paddingTop: 0.011111111
+    paddingBottom: 0.011111111
+  - name: ui_characterStoke
+    outer:
+      serializedVersion: 2
+      x: 1213
+      y: 1041
+      width: 511
+      height: 104
+    inner:
+      serializedVersion: 2
+      x: 1213
+      y: 1041
+      width: 511
+      height: 104
+    paddingLeft: 0.0039138943
+    paddingRight: 0
+    paddingTop: 0.01923077
+    paddingBottom: 0.03846154
+  - name: ui_pagemark
+    outer:
+      serializedVersion: 2
+      x: 1960
+      y: 935
+      width: 62
+      height: 80
+    inner:
+      serializedVersion: 2
+      x: 1960
+      y: 935
+      width: 62
+      height: 80
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_gauge_shop
+    outer:
+      serializedVersion: 2
+      x: 256
+      y: 1144
+      width: 239
+      height: 22
+    inner:
+      serializedVersion: 2
+      x: 256
+      y: 1144
+      width: 239
+      height: 22
+    paddingLeft: 0.012552301
+    paddingRight: 0.012552301
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_gauge_shop2
+    outer:
+      serializedVersion: 2
+      x: 385
+      y: 247
+      width: 246
+      height: 44
+    inner:
+      serializedVersion: 2
+      x: 385
+      y: 247
+      width: 246
+      height: 44
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_btn_shop2
+    outer:
+      serializedVersion: 2
+      x: 1609
+      y: 1335
+      width: 340
+      height: 239
+    inner:
+      serializedVersion: 2
+      x: 1609
+      y: 1335
+      width: 340
+      height: 239
+    paddingLeft: 0.0029411765
+    paddingRight: 0
+    paddingTop: 0.07112971
+    paddingBottom: 0
+  - name: token0
+    outer:
+      serializedVersion: 2
+      x: 916
+      y: 541
+      width: 64
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 916
+      y: 541
+      width: 64
+      height: 64
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: token1
+    outer:
+      serializedVersion: 2
+      x: 263
+      y: 511
+      width: 128
+      height: 124
+    inner:
+      serializedVersion: 2
+      x: 263
+      y: 511
+      width: 128
+      height: 124
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.016129032
+    paddingBottom: 0.016129032
+  - name: token5
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 249
+      width: 126
+      height: 121
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 249
+      width: 126
+      height: 121
+    paddingLeft: 0.007936508
+    paddingRight: 0.007936508
+    paddingTop: 0.041322313
+    paddingBottom: 0.016528925
+  - name: token3
+    outer:
+      serializedVersion: 2
+      x: 399
+      y: 608
+      width: 127
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 399
+      y: 608
+      width: 127
+      height: 126
+    paddingLeft: 0.007874016
+    paddingRight: 0
+    paddingTop: 0.007936508
+    paddingBottom: 0.007936508
+  - name: token2
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 508
+      width: 126
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 508
+      width: 126
+      height: 126
+    paddingLeft: 0.007936508
+    paddingRight: 0.007936508
+    paddingTop: 0.015873017
+    paddingBottom: 0
+  - name: token4
+    outer:
+      serializedVersion: 2
+      x: 664
+      y: 722
+      width: 125
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 664
+      y: 722
+      width: 125
+      height: 126
+    paddingLeft: 0.008
+    paddingRight: 0.016
+    paddingTop: 0.007936508
+    paddingBottom: 0.007936508
+  - name: token9
+    outer:
+      serializedVersion: 2
+      x: 1598
+      y: 589
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1598
+      y: 589
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: token8
+    outer:
+      serializedVersion: 2
+      x: 907
+      y: 853
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 907
+      y: 853
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: token6
+    outer:
+      serializedVersion: 2
+      x: 655
+      y: 464
+      width: 126
+      height: 121
+    inner:
+      serializedVersion: 2
+      x: 655
+      y: 464
+      width: 126
+      height: 121
+    paddingLeft: 0.007936508
+    paddingRight: 0.007936508
+    paddingTop: 0.041322313
+    paddingBottom: 0.016528925
+  - name: token7
+    outer:
+      serializedVersion: 2
+      x: 1731
+      y: 589
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1731
+      y: 589
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_cash5
+    outer:
+      serializedVersion: 2
+      x: 794
+      y: 721
+      width: 124
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 794
+      y: 721
+      width: 124
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0.032258064
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: icon_cash1
+    outer:
+      serializedVersion: 2
+      x: 531
+      y: 590
+      width: 124
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 531
+      y: 590
+      width: 124
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0.032258064
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: icon_cash4
+    outer:
+      serializedVersion: 2
+      x: 660
+      y: 590
+      width: 124
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 660
+      y: 590
+      width: 124
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0.032258064
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: icon_cash3
+    outer:
+      serializedVersion: 2
+      x: 923
+      y: 610
+      width: 124
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 923
+      y: 610
+      width: 124
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0.032258064
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: icon_cash2
+    outer:
+      serializedVersion: 2
+      x: 131
+      y: 375
+      width: 124
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 131
+      y: 375
+      width: 124
+      height: 127
+    paddingLeft: 0
+    paddingRight: 0.032258064
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: icon_cash_doubler
+    outer:
+      serializedVersion: 2
+      x: 133
+      y: 507
+      width: 125
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 133
+      y: 507
+      width: 125
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0.024
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_facebook
+    outer:
+      serializedVersion: 2
+      x: 510
+      y: 1453
+      width: 140
+      height: 140
+    inner:
+      serializedVersion: 2
+      x: 510
+      y: 1453
+      width: 140
+      height: 140
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: text_s_0
+    outer:
+      serializedVersion: 2
+      x: 391
+      y: 1185
+      width: 255
+      height: 255
+    inner:
+      serializedVersion: 2
+      x: 391
+      y: 1185
+      width: 255
+      height: 255
+    paddingLeft: 0
+    paddingRight: 0.003921569
+    paddingTop: 0
+    paddingBottom: 0.003921569
+  - name: hud_multipliercover
+    outer:
+      serializedVersion: 2
+      x: 1294
+      y: 635
+      width: 150
+      height: 71
+    inner:
+      serializedVersion: 2
+      x: 1294
+      y: 635
+      width: 150
+      height: 71
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hun_skillActivate
+    outer:
+      serializedVersion: 2
+      x: 1864
+      y: 589
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1864
+      y: 589
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_popup_lucky
+    outer:
+      serializedVersion: 2
+      x: 1609
+      y: 1796
+      width: 374
+      height: 252
+    inner:
+      serializedVersion: 2
+      x: 1609
+      y: 1796
+      width: 374
+      height: 252
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_shadow_active_foreground
+    outer:
+      serializedVersion: 2
+      x: 1795
+      y: 855
+      width: 160
+      height: 160
+    inner:
+      serializedVersion: 2
+      x: 1795
+      y: 855
+      width: 160
+      height: 160
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_shadow_active_alert
+    outer:
+      serializedVersion: 2
+      x: 1300
+      y: 711
+      width: 160
+      height: 160
+    inner:
+      serializedVersion: 2
+      x: 1300
+      y: 711
+      width: 160
+      height: 160
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: hud_backCover2
+    outer:
+      serializedVersion: 2
+      x: 510
+      y: 1446
+      width: 125
+      height: 2
+    inner:
+      serializedVersion: 2
+      x: 510
+      y: 1446
+      width: 125
+      height: 2
+    paddingLeft: 0.008
+    paddingRight: 0.016
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ui_footer_pattern
+    outer:
+      serializedVersion: 2
+      x: 671
+      y: 986
+      width: 420
+      height: 109
+    inner:
+      serializedVersion: 2
+      x: 821
+      y: 986
+      width: 8
+      height: 109
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: loading_spin
+    outer:
+      serializedVersion: 2
+      x: 1040
+      y: 742
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1040
+      y: 742
+      width: 128
+      height: 128
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_luckybox2
+    outer:
+      serializedVersion: 2
+      x: 655
+      y: 1473
+      width: 102
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 655
+      y: 1473
+      width: 102
+      height: 120
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_gamecenter
+    outer:
+      serializedVersion: 2
+      x: 1465
+      y: 731
+      width: 140
+      height: 140
+    inner:
+      serializedVersion: 2
+      x: 1465
+      y: 731
+      width: 140
+      height: 140
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 0.5
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
