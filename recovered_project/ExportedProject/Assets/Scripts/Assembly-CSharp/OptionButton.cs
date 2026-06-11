@@ -21,15 +21,21 @@ public class OptionButton : MonoBehaviour
 
 	private void OnClick()
 	{
+		if (OpenWindowButton.IsWindowOpen)
+		{
+			return;
+		}
 		MonoSingleton<EventManager>.instance.TriggerEvent(new OnEnterOptionEvent());
-		((MonoBehaviour)this).StartCoroutine("DisableButton");
+		button.isEnabled = false;
 	}
 
-	[DebuggerHidden]
-	private global::System.Collections.IEnumerator DisableButton()
+	private void OnOpenWindow()
 	{
 		button.isEnabled = false;
-		yield return (object)new WaitForSeconds(0.5f);
+	}
+
+	private void OnCloseWindow()
+	{
 		button.isEnabled = true;
 	}
 }

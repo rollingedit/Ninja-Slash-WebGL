@@ -4,7 +4,7 @@ A modern WebGL port of **Ninja Slash**, the Unity endless runner originally rele
 
 Playable demo: https://ninjaslash.pages.dev/
 
-This project takes an original Unity Web Player-era game build and ports it to a browser-native WebGL deployment. The work goes beyond wrapping an old binary in HTML: the project was recovered into Unity, repaired for a modern toolchain, rebuilt for WebGL, and packaged for static hosting with custom loading behavior.
+This project takes an original Unity Web Player-era game build and ports it to a browser-native WebGL deployment. It is not a wrapper around an old plugin build: the game was recovered into Unity, repaired for a modern editor/runtime, rebuilt for WebGL, and packaged as a static browser game with custom loading behavior.
 
 ## Original Game
 
@@ -23,21 +23,27 @@ Reference: https://kongregate.fandom.com/wiki/Ninja_Slash
 
 ## Technical Porting Work
 
-This port required a full recovery and compatibility pass across the Unity project, runtime code, browser integration, and static deployment package.
+This port required a full recovery and compatibility pass across project data, runtime code, UI behavior, rendering, browser integration, and the final static deployment package.
 
-- Recovered the original Unity Web Player artifact into a Unity project with AssetRipper.
+- Recovered the original Unity Web Player artifact into a Unity project with [AssetRipper](https://github.com/AssetRipper/AssetRipper).
 - Migrated the recovered project into a modern Unity editor capable of WebGL output.
 - Repaired recovered C# scripts for modern Unity API compatibility.
 - Replaced discontinued Kongregate, browser-plugin, ad, mobile-store, and platform service calls with WebGL-safe behavior.
 - Patched keyboard, mouse, and touch input paths for browser play.
-- Repaired menu and UI flow across title, restart, shop, upgrades, dojo, roster, missions, and career screens.
+- Repaired menu and UI flow across title, restart, shop, upgrades, dojo, roster, missions, career, options, and pause/settings screens.
 - Preserved recovered scenes, prefabs, stage data, character panels, enemy behavior, effects, missions, upgrades, and UI assets where possible.
+- Repaired recovered asset-data corruption that prevented key prefabs and tags from importing or resolving correctly in modern Unity.
+- Restored restart/session cleanup so old generated world blocks and enemies do not persist into later runs.
+- Adjusted recovered collision/trigger data where modern Unity physics no longer matched the original Unity Web Player runtime.
 - Fixed WebGL rendering regressions from the recovery process, including material/shader issues and missing visual effects.
+- Restored shader behavior needed for original trail/effect tinting and fading.
 - Replaced dead app-store links with a WebGL port banner and repository link.
 - Replaced visible Unity template splash/loading branding with RollingEdit WebGL Port branding.
 - Built a local static WebGL package in `final/`.
 - Built a static deployment package in `NinjaSlash/` with split `.data` and `.wasm` loading for static host file-size limits.
 - Removed compressed Unity artifact handling that caused incorrect WebAssembly MIME/content loading on static hosts.
+
+Much of the work was compatibility repair rather than feature recreation: recovered prefabs, tags, serialized UI references, object pools, trigger volumes, shaders, and WebGL startup files all needed targeted fixes before the game behaved like the original build in a current browser.
 
 ## Intentional Gameplay Changes
 

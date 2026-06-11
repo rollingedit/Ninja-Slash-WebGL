@@ -15,17 +15,31 @@ public class OpenWindowButton : MonoBehaviour
 		}
 	}
 
+	public static bool TryAcquireWindow()
+	{
+		if (IsWindowOpen)
+		{
+			return false;
+		}
+		s_openWindowCount = 1;
+		return true;
+	}
+
+	public static void ReleaseWindow()
+	{
+		s_openWindowCount = Mathf.Max(0, s_openWindowCount - 1);
+	}
+
 	public GameObject targetWindowPrefab;
 
 	public UIButton button;
 
 	private void OnClick()
 	{
-		if (IsWindowOpen || (Object)(object)targetWindowPrefab == (Object)null)
+		if ((Object)(object)targetWindowPrefab == (Object)null || !TryAcquireWindow())
 		{
 			return;
 		}
-		s_openWindowCount = 1;
 		GameObject gameObject = ((Component)NGUITools.FindCameraForLayer(((Component)this).gameObject.layer)).gameObject;
 		NGUIUtility.AddChild(gameObject, targetWindowPrefab);
 		((Component)((Component)this).transform.root).BroadcastMessage("OnOpenWindow", (SendMessageOptions)1);
@@ -38,7 +52,7 @@ public class OpenWindowButton : MonoBehaviour
 
 	private void OnCloseWindow()
 	{
-		s_openWindowCount = Mathf.Max(0, s_openWindowCount - 1);
+		ReleaseWindow();
 		button.isEnabled = true;
 	}
 }

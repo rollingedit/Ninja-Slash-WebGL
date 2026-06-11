@@ -156,7 +156,12 @@ public class GUIRoot : MonoBehaviour
 
 	private void OnEnterOption()
 	{
+		if (!OpenWindowButton.TryAcquireWindow())
+		{
+			return;
+		}
 		GameObject val = NGUIUtility.AddChild(mainPanel, optionWindowPrefab);
+		((Component)((Component)this).transform.root).BroadcastMessage("OnOpenWindow", (SendMessageOptions)1);
 		val.SendMessage("OnOptionWindowOpened", (object)isGameStarted);
 	}
 

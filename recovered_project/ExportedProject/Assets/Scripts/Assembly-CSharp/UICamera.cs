@@ -129,6 +129,8 @@ public class UICamera : MonoBehaviour
 
 	private static float mNextEvent = 0f;
 
+	private static float mSuppressMouseUntil = 0f;
+
 	private Dictionary<int, MouseOrTouch> mTouches = new Dictionary<int, MouseOrTouch>();
 
 	private GameObject mTooltip;
@@ -631,6 +633,15 @@ public class UICamera : MonoBehaviour
 		//IL_011f: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0133: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0138: Unknown result type (might be due to invalid IL or missing references)
+		if (Time.realtimeSinceStartup < mSuppressMouseUntil)
+		{
+			for (int i = 0; i < 3; i++)
+			{
+				mMouse[i].pressed = null;
+				mMouse[i].current = null;
+			}
+			return;
+		}
 		bool flag = useMouse && Time.timeScale < 0.9f;
 		if (!flag)
 		{
@@ -749,6 +760,7 @@ public class UICamera : MonoBehaviour
 			Touch touch = Input.GetTouch(i);
 			if (allowMultiTouch || touch.fingerId == 0)
 			{
+				mSuppressMouseUntil = Time.realtimeSinceStartup + 0.5f;
 				currentTouchID = ((!allowMultiTouch) ? 1 : touch.fingerId);
 				currentTouch = GetTouch(currentTouchID);
 				bool flag = (int)touch.phase == 0 || currentTouch.touchBegan;
