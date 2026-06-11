@@ -2,10 +2,14 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1045 &1
 EditorBuildSettings:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
+  serializedVersion: 2
   m_Scenes:
   - enabled: 1
     path: Assets/scene/loadingScene.unity
+    guid: 35fb3affee0018847825d0e735aa1c56
   - enabled: 1
     path: Assets/scene/gameScene.unity
+    guid: f9fc168450d94fc4798efb4302378841
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

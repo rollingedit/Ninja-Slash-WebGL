@@ -11,14 +11,23 @@ public class OptionWindow : MonoBehaviour
 
 	public GameObject tutorialDisableText;
 
+	private bool isClosing;
+
 	private void OnGetObjectFromPool()
 	{
+		isClosing = false;
 		tweenPosition.Play(true);
 	}
 
 	private void OnBackButtonClicked()
 	{
+		if (isClosing)
+		{
+			return;
+		}
+		isClosing = true;
 		tweenPosition.Play(false);
+		((Component)((Component)this).transform.root).BroadcastMessage("OnCloseWindow", (SendMessageOptions)1);
 		NGUIUtility.DestroyWhenTweenFinished(((Component)this).gameObject, tweenPosition);
 	}
 

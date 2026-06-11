@@ -25,15 +25,13 @@ public class OptionCheckBox : MonoBehaviour
 		}
 	}
 
-	private void OnClick()
+	private void OnActivate(bool isChecked)
 	{
-		if (uiCheckbox.isChecked)
-		{
-			((Component)this).SendMessageUpwards("OnChecked", (object)type);
-		}
-		else
-		{
-			((Component)this).SendMessageUpwards("OnUnchecked", (object)type);
-		}
+		ApplyState(isChecked);
+	}
+
+	private void ApplyState(bool isChecked)
+	{
+		((Component)this).SendMessageUpwards(isChecked ? "OnChecked" : "OnUnchecked", (object)type);
 	}
 }
